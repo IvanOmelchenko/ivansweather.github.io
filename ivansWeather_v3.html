@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ivan's Weather</title>
+    <link rel="stylesheet" href="ivansWeather_v3.css">
+</head>
+<body>
+<div class='root'>
+    <main>
+        <header>
+            <div class="logo">
+                ivan's weather
+            </div>
+            <div class="where">
+                <form>
+
+                    <label for="cityname"></label>
+                    <input type="text" id="cityname" size="20" value=" "/>
+                    <input type="button" id="send" value="Go" />
+                </form>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="picture">
+                <img id="cloudimg">
+                <h2><span id="temp"></span>&deg;C</h2>
+            </div>
+            <div class="info">
+                <span id="selectedcity"></span><br>
+                <h1>Today</h1><hr>
+                <span id="clouddescr"></span><br>
+                pressure: <span id="pressure"></span> hPa<br>
+                humidity: <span id="humidity"></span>  %<br>
+                wind speed: <span id="windspeed"></span> m/s
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class="items">
+            <div class="item" id="day1">
+
+
+
+            </div>
+            <div class="item" id="02n">
+                 <span id="day2"></span>
+
+
+            </div>
+            <div class="item" id="03n">
+                <span id="day"></span>
+
+            </div>
+            <div class="item" id="04n">
+                <span id="day4"></span>
+
+            </div>
+            <div class="item" id="05n">
+                 <span id="day5"></span>
+
+            </div>
+        </div>
+    </aside>
+</div>
+</body>
+
+<script type="text/javascript" src="ivansWeather_v3.js"></script>
+</html>
